@@ -10,8 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-
-task: ArtifactoryMaven@2
+- task: ArtifactoryMaven@2
   inputs:
     mavenPomFile: 'pom.xml'
     goals: 'package'
